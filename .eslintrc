@@ -1,0 +1,18 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "**/tsconfig.json",
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "ignorePatterns": ["*.min.js", "dist/*.*", "node_modules/*.*", "gulpfile.js"],
+  "extends": ["prettier/prettier", "airbnb-base", "airbnb-typescript/base"],
+  "plugins": ["prettier", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "camelcase": 0
+  }
+}

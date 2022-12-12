@@ -1,0 +1,42 @@
+{
+  "name": "interest-calculator",
+  "version": "1.0.0",
+  "description": "student project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "prettier": "prettier --config .prettierrc.json --write **.ts",
+    "eslint": "eslint . --ext .ts",
+    "eslint:fix": "eslint . --ext .ts --fix"
+  },
+  "author": "Piotr Koralewski",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "browser-sync": "^2.27.10",
+    "browserify": "^17.0.0",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "glob": "^8.0.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-wait": "^0.0.2",
+    "node-sass": "^8.0.0",
+    "prettier": "^2.8.0",
+    "sass": "^1.56.1",
+    "tsify": "^5.0.4",
+    "typescript": "^4.9.3",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

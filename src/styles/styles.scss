@@ -1,0 +1,40 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://media1.giphy.com/media/kg19fN5BXbZGIDznzG/giphy.gif?cid=ecf05e478uq3n2aefryfvkpjmzpend71a71dnok81cnu6nl6&rid=giphy.gif&ct=g");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-text {
+  &:hover {
+    color: #0060d7cf;
+  }
+}
+
+.standard-button {
+  background-color: #1d1556fa;
+  border-color: #1d1556fa;
+  border-radius: 5px;
+  color: white;
+  height: 2.5em;
+  width: 8em;
+
+  &:hover {
+    background-color: #0060d7cf;
+    border-color: #0060d7cf;
+  }
+}
+
+.foot-selection-button {
+  background-color: #1d1556fa;
+  border-color: #1d1556fa;
+  border-radius: 5px;
+  color: white;
+  height: 3.5em;
+  width: 20em;
+
+  &:hover {
+    background-color: #0060d7cf;
+    border-color: #0060d7cf;
+  }
+}

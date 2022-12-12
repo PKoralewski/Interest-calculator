@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator odsetkowy</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome v6.2.1 -->
+    <link
+      rel="stylesheet"
+      href="/interest-calculator/assets/fontawesome-free-6.2.1/css/all.min.css"
+    />
+
+    <!-- Bootstrap v5.2.3 -->
+    <link
+      rel="stylesheet"
+      href="/interest-calculator/assets/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <script
+      src="/interest-calculator/assets/bootstrap-5.2.3-dist/js/bootstrap.min.js"
+      defer
+    ></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/interest-calculator/dist/css/utils.min.css" />
+    <link
+      rel="stylesheet"
+      href="/interest-calculator/dist/css/styles.min.css"
+    />
+  </head>
+  <body class="container-fluid text-center">
+    <header
+      class="row align-items-start bg-white py-2 fw-bold fs-5 text-center opacity-85 text-uppercase"
+    >
+      <nav class="navbar">
+        <ul class="navbar-nav d-flex flex-row w-100 justify-content-evenly">
+          <li class="nav-item active">
+            <a class="text-decoration-none text-dark" href="home.html"
+              ><p class="nav-text">Strona główna</p></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="text-decoration-none text-dark" href="login.html"
+              ><p class="nav-text">Logowanie</p></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="text-decoration-none text-dark" href="register.html"
+              ><p class="nav-text">Rejestracja</p></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="text-decoration-none text-dark" href="calculator.html"
+              ><p class="nav-text">Kalkulator</p></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="text-decoration-none text-dark" href="history.html"
+              ><p class="nav-text">Historia obliczeń</p></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class="row align-items-center bg-white text-dark m-5 p-4 opacity-85 w-50 d-inline-flex"
+    >
+      <section class="col">
+        <h4 class="my-3 text-uppercase">Rejestracja</h4>
+        <div class="w-100 mt-5">
+          <div class="input-group mb-3 w-35 d-inline-flex">
+            <span class="input-group-text" id="basic-addon1">E-mail</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Wpisz e-mail"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+        <div class="w-100">
+          <div class="input-group mb-3 w-35 d-inline-flex">
+            <span class="input-group-text" id="basic-addon2">Hasło</span>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Wpisz hasło"
+              aria-label="Password"
+              aria-describedby="basic-addon2"
+            />
+          </div>
+        </div>
+        <div class="w-100">
+          <div class="input-group mb-3 w-35 d-inline-flex">
+            <span class="input-group-text" id="basic-addon3"
+              >Kod weryfikacyjny</span
+            >
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Wpisz kod"
+              disabled="true"
+              aria-label="Verification-code"
+              aria-describedby="basic-addon3"
+            />
+          </div>
+        </div>
+        <p>Masz już konto? <a href="login.html">Zaloguj się!</a></p>
+        <button type="submit" class="my-4 text-nowrap standard-button">
+          Zarejestruj się!
+        </button>
+      </section>
+    </main>
+    <footer
+      class="row footer position-fixed bottom-0 bg-white text-dark opacity-85 w-100 p-2"
+    >
+      <div class="col">
+        <section class="row">
+          <div class="col">
+            <a href="https://pl-pl.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook fs-3"></i
+            ></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube fs-3"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram fs-3"></i>
+            </a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"
+              ><i class="fa-brands fa-twitter fs-3"></i>
+            </a>
+          </div>
+        </section>
+        <section class="row">
+          <div class="col">
+            <p class="m-0">
+              &copy;<small>Copyright 2022 Piotr Koralewski</small>
+            </p>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
