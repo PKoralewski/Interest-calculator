@@ -74,93 +74,117 @@
     </header>
     <main class="row align-items-center bg-white text-dark m-5 p-4 opacity-85">
       <section class="col">
-        <h4 class="my-3 text-uppercase">Kalkulator</h4>
-        <div class="row justify-content-center my-5">
-          <div class="col">
-            <button class="foot-selection-button mx-3">
-              Stała stopa oprocentowania
-            </button>
-            <button class="foot-selection-button mx-3">
-              Zmienna stopa oprocentowania
-            </button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-9">
-            <div class="input-group mb-3 w-40 d-inline-flex mx-5">
-              <span class="input-group-text" id="basic-addon3"
-                >Wysokość kredytu(PLN) <span class="text-danger">*</span></span
-              >
-              <input
-                type="number"
-                class="form-control"
-                placeholder="Wpisz wysokość kredytu"
-                aria-label="Loan-amount"
-                aria-describedby="basic-addon3"
-              />
-            </div>
-            <div class="input-group mb-3 w-50 d-inline-flex">
-              <span class="input-group-text" id="basic-addon3"
-                >Okres kredytowania(miesiące)
-                <span class="text-danger">*</span></span
-              >
-              <input
-                type="number"
-                class="form-control"
-                placeholder="Wpisz okres kredytowania"
-                aria-label="Loan-period"
-                aria-describedby="basic-addon3"
-              />
-            </div>
-            <div class="input-group mb-3 w-50 d-inline-flex mx-5">
-              <span class="input-group-text" id="basic-addon3"
-                >Wysokość wpłaty własnej(PLN)</span
-              >
-              <input
-                type="number"
-                class="form-control"
-                placeholder="Wpisz wysokość wpłaty własnej"
-                aria-label="Amount-of-own-contribution"
-                aria-describedby="basic-addon3"
-              />
-            </div>
-            <div class="input-group mb-3 w-40 d-inline-flex">
-              <span class="input-group-text" id="basic-addon3"
-                >Oprocentowanie kredytu <span class="text-danger">*</span></span
-              >
-              <input
-                type="number"
-                class="form-control"
-                placeholder="Wpisz oprocentowanie"
-                aria-label="Loan-interest-rate"
-                aria-describedby="basic-addon3"
-              />
-            </div>
-            <div class="input-group mb-3 w-60 d-inline-flex px-5">
-              <span class="input-group-text" id="basic-addon3"
-                >Wysokość spłaty częsciowej(PLN)</span
-              >
-              <input
-                type="number"
-                class="form-control"
-                placeholder="Wpisz wysokość spłaty częsciowej"
-                aria-label="Partial-payment-amount"
-                aria-describedby="basic-addon3"
-              />
+        <form>
+          <h4 class="my-3 text-uppercase">Kalkulator</h4>
+          <div class="row justify-content-center my-5">
+            <div class="col">
+              <button class="foot-selection-button mx-3">
+                Stała stopa oprocentowania
+              </button>
+              <button class="foot-selection-button mx-3">
+                Zmienna stopa oprocentowania
+              </button>
             </div>
           </div>
-          <div class="col-3">
-            <div class="d-inline-block fs-5 my-3">
-              <p class="fw-bold">0%</p>
-              <p class="">WIBOR</p>
+          <div class="row">
+            <div class="col-9">
+              <div class="input-group mb-3 w-40 d-inline-flex mx-5">
+                <label
+                  for="loan-amount"
+                  class="input-group-text"
+                  id="loan-amount-label"
+                  >Wysokość kredytu(PLN)
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  id="loan-amount"
+                  type="number"
+                  class="form-control"
+                  placeholder="Wpisz wysokość kredytu"
+                  aria-label="Loan-amount"
+                  aria-describedby="loan-amount-label"
+                />
+              </div>
+              <div class="input-group mb-3 w-50 d-inline-flex">
+                <label
+                  for="loan-period"
+                  class="input-group-text"
+                  id="loan-period-label"
+                  >Okres kredytowania(miesiące)
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  id="loan-period"
+                  type="number"
+                  class="form-control"
+                  placeholder="Wpisz okres kredytowania"
+                  aria-label="Loan-period"
+                  aria-describedby="loan-period-label"
+                />
+              </div>
+              <div class="input-group mb-3 w-50 d-inline-flex mx-5">
+                <label
+                  for="amount-of-own-contribution"
+                  class="input-group-text"
+                  id="Amount-of-own-contribution-label"
+                  >Wysokość wpłaty własnej(PLN)</label
+                >
+                <input
+                  id="amount-of-own-contribution"
+                  type="number"
+                  class="form-control"
+                  placeholder="Wpisz wysokość wpłaty własnej"
+                  aria-label="Amount-of-own-contribution"
+                  aria-describedby="Amount-of-own-contribution-label"
+                />
+              </div>
+              <div class="input-group mb-3 w-40 d-inline-flex">
+                <label
+                  for="loan-interest-rate"
+                  class="input-group-text"
+                  id="Loan-interest-rate-label"
+                  >Oprocentowanie kredytu
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  id="loan-interest-rate"
+                  type="number"
+                  class="form-control"
+                  placeholder="Wpisz oprocentowanie"
+                  aria-label="Loan-interest-rate"
+                  aria-describedby="Loan-interest-rate-label"
+                />
+              </div>
+              <div class="input-group mb-3 w-60 d-inline-flex px-5">
+                <label
+                  for="partial-payment-amount"
+                  class="input-group-text"
+                  id="Partial-payment-amount-label"
+                  >Wysokość spłaty częsciowej(PLN)</label
+                >
+                <input
+                  id="partial-payment-amount"
+                  type="number"
+                  class="form-control"
+                  placeholder="Wpisz wysokość spłaty częsciowej"
+                  aria-label="Partial-payment-amount"
+                  aria-describedby="Partial-payment-amount-label"
+                />
+              </div>
             </div>
-            <div class="d-inline-block fs-5 mx-5">
-              <p class="fw-bold">0%</p>
-              <p class="">Marża</p>
+            <div class="col-3">
+              <div class="d-inline-block fs-5 my-3">
+                <p class="fw-bold">0%</p>
+                <p class="">WIBOR</p>
+              </div>
+              <div class="d-inline-block fs-5 mx-5">
+                <p class="fw-bold">0%</p>
+                <p class="">Marża</p>
+              </div>
             </div>
           </div>
-        </div>
-        <button class="standard-button my-4">Oblicz</button>
+          <button type="submit" class="standard-button my-4">Oblicz</button>
+        </form>
         <div class="row">
           <div class="col">
             <div class="d-inline-flex my-5">

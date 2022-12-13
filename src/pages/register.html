@@ -77,49 +77,61 @@
     >
       <section class="col">
         <h4 class="my-3 text-uppercase">Rejestracja</h4>
-        <div class="w-100 mt-5">
-          <div class="input-group mb-3 w-35 d-inline-flex">
-            <span class="input-group-text" id="basic-addon1">E-mail</span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Wpisz e-mail"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
+        <form>
+          <div class="w-100 mt-5">
+            <div class="input-group mb-3 w-35 d-inline-flex">
+              <label for="email" class="input-group-text" id="email-label"
+                >E-mail</label
+              >
+              <input
+                id="email"
+                type="text"
+                class="form-control"
+                placeholder="Wpisz e-mail"
+                aria-label="Username"
+                aria-describedby="email-label"
+              />
+            </div>
           </div>
-        </div>
-        <div class="w-100">
-          <div class="input-group mb-3 w-35 d-inline-flex">
-            <span class="input-group-text" id="basic-addon2">Hasło</span>
-            <input
-              type="password"
-              class="form-control"
-              placeholder="Wpisz hasło"
-              aria-label="Password"
-              aria-describedby="basic-addon2"
-            />
+          <div class="w-100">
+            <div class="input-group mb-3 w-35 d-inline-flex">
+              <label for="password" class="input-group-text" id="passwrod-label"
+                >Hasło</label
+              >
+              <input
+                id="password"
+                type="password"
+                class="form-control"
+                placeholder="Wpisz hasło"
+                aria-label="Password"
+                aria-describedby="passwrod-label"
+              />
+            </div>
           </div>
-        </div>
-        <div class="w-100">
-          <div class="input-group mb-3 w-35 d-inline-flex">
-            <span class="input-group-text" id="basic-addon3"
-              >Kod weryfikacyjny</span
-            >
-            <input
-              type="number"
-              class="form-control"
-              placeholder="Wpisz kod"
-              disabled="true"
-              aria-label="Verification-code"
-              aria-describedby="basic-addon3"
-            />
+          <div class="w-100">
+            <div class="input-group mb-3 w-35 d-inline-flex">
+              <label
+                for="verification-code"
+                class="input-group-text"
+                id="verification-code-label"
+                >Kod weryfikacyjny</label
+              >
+              <input
+                id="verification-code"
+                type="number"
+                class="form-control"
+                placeholder="Wpisz kod"
+                disabled="true"
+                aria-label="Verification-code"
+                aria-describedby="verification-code-label"
+              />
+            </div>
           </div>
-        </div>
-        <p>Masz już konto? <a href="login.html">Zaloguj się!</a></p>
-        <button type="submit" class="my-4 text-nowrap standard-button">
-          Zarejestruj się!
-        </button>
+          <p>Masz już konto? <a href="login.html">Zaloguj się!</a></p>
+          <button type="submit" class="my-4 text-nowrap standard-button">
+            Zarejestruj się!
+          </button>
+        </form>
       </section>
     </main>
     <footer

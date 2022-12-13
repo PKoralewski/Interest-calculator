@@ -77,32 +77,44 @@
     >
       <section class="col">
         <h4 class="my-3 text-uppercase">Logowanie</h4>
-        <div class="w-100 mt-5">
-          <div class="input-group mb-3 w-35 d-inline-flex">
-            <span class="input-group-text" id="basic-addon1">E-mail</span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Wpisz e-mail"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
+        <form>
+          <div class="w-100 mt-5">
+            <div class="input-group mb-3 w-35 d-inline-flex">
+              <label for="username" class="input-group-text" id="username-label"
+                >E-mail</label
+              >
+              <input
+                id="username"
+                type="text"
+                class="form-control"
+                placeholder="Wpisz e-mail"
+                aria-label="Username"
+                aria-describedby="username-label"
+              />
+            </div>
           </div>
-        </div>
-        <div class="w-100">
-          <div class="input-group mb-3 w-35 d-inline-flex">
-            <span class="input-group-text" id="basic-addon2">Hasło</span>
-            <input
-              type="password"
-              class="form-control"
-              placeholder="Wpisz hasło"
-              aria-label="Password"
-              aria-describedby="basic-addon2"
-            />
+          <div class="w-100">
+            <div class="input-group mb-3 w-35 d-inline-flex">
+              <label for="password" class="input-group-text" id="password-label"
+                >Hasło</label
+              >
+              <input
+                id="password"
+                type="password"
+                class="form-control"
+                placeholder="Wpisz hasło"
+                aria-label="Password"
+                aria-describedby="password-label"
+              />
+            </div>
           </div>
-        </div>
-        <p>Nie posiadasz konta?<a href="register.html"> Zarejestruj się!</a></p>
-        <button type="submit" class="my-4 standard-button">Zaloguj się!</button>
+          <p>
+            Nie posiadasz konta?<a href="register.html"> Zarejestruj się!</a>
+          </p>
+          <button type="submit" class="my-4 standard-button">
+            Zaloguj się!
+          </button>
+        </form>
       </section>
     </main>
     <footer
