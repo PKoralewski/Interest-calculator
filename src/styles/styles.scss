@@ -1,3 +1,17 @@
+@import "_variables";
+
+@mixin base-button {
+  background-color: $button-color;
+  border-color: $button-border-color;
+  border-radius: $button-border-radius;
+  color: white;
+}
+
+@mixin base-button-hover {
+  background-color: $hover-color;
+  border-color: $button-hover-border-color;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-image: url("https://media1.giphy.com/media/kg19fN5BXbZGIDznzG/giphy.gif?cid=ecf05e478uq3n2aefryfvkpjmzpend71a71dnok81cnu6nl6&rid=giphy.gif&ct=g");
@@ -8,34 +22,26 @@ body {
 .nav-text {
   color: black;
   &:hover {
-    color: #0060d7cf;
+    color: $hover-color;
   }
 }
 
 .standard-button {
-  background-color: #1d1556fa;
-  border-color: #1d1556fa;
-  border-radius: 5px;
-  color: white;
+  @include base-button;
   height: 2.5em;
   width: 8em;
 
   &:hover {
-    background-color: #0060d7cf;
-    border-color: #0f77f7d5;
+    @include base-button-hover;
   }
 }
 
 .foot-selection-button {
-  background-color: #1d1556fa;
-  border-color: #1d1556fa;
-  border-radius: 5px;
-  color: white;
+  @include base-button;
   height: 3.5em;
   width: 20em;
 
   &:hover {
-    background-color: #0060d7cf;
-    border-color: #0f77f7d5;
+    @include base-button-hover;
   }
 }
