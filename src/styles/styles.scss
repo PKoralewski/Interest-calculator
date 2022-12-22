@@ -1,16 +1,5 @@
 @import "_variables";
-
-@mixin base-button {
-  background-color: $button-color;
-  border-color: $button-border-color;
-  border-radius: $button-border-radius;
-  color: white;
-}
-
-@mixin base-button-hover {
-  background-color: $hover-color;
-  border-color: $button-hover-border-color;
-}
+@import "_mixins.scss";
 
 body {
   font-family: "Poppins", sans-serif;
